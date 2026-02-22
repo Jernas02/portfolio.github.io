@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arul Jernas X | Product Specialist & IT Expert</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+        :root {
+            --primary: #00d2ff;
+            --secondary: #3a7bd5;
+            --dark: #0f172a;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: #f8fafc;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0, 210, 255, 0.3);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link {
+            color: #94a3b8 !important;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-link.active, .nav-link:hover {
+            color: var(--primary) !important;
+        }
+
+        .timeline-item {
+            border-left: 2px solid var(--glass-border);
+            padding-left: 30px;
+            position: relative;
+            padding-bottom: 40px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 10px var(--primary);
+        }
+
+        .btn-premium {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-premium:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+            color: white;
+        }
+
+        .progress {
+            height: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            overflow: visible;
+        }
+
+        .progress-bar {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .skill-badge {
+            background: rgba(0, 210, 255, 0.1);
+            color: var(--primary);
+            border: 1px solid rgba(0, 210, 255, 0.2);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin: 4px;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        @media (max-width: 768px) {
+            section { padding: 60px 0; }
+            .hero-title { font-size: 2.5rem !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top glass-card mx-md-4 mt-3 py-2">
+        <div class="container">
+            <a class="navbar-brand font-bold text-xl gradient-text" href="#">ARUL JERNAS</a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link mx-2" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-vh-100 d-flex align-items-center">
+        <div class="container text-center mt-5">
+            <div data-aos="zoom-in" data-aos-duration="1000">
+                <h5 class="text-uppercase tracking-widest text-primary mb-3">Welcome to my world</h5>
+                <h1 class="display-1 fw-bold mb-4 hero-title">I'm <span class="gradient-text">Arul Jernas X</span></h1>
+                <h2 class="h3 mb-4 text-slate-400">
+                    <span id="typed"></span>
+                </h2>
+                <p class="lead max-w-2xl mx-auto mb-5 text-slate-400">
+                    Experienced Product Specialist and IT Administrator focused on optimizing enterprise payroll systems and institutional network infrastructures.
+                </p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#contact" class="btn btn-premium">Work Together</a>
+                    <a href="#" onclick="window.print()" class="btn btn-outline-light px-4 rounded-pill">
+                        <i class="fas fa-download me-2"></i>Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                <div class="glass-card p-4 p-md-5">
+                    <h2 class="display-5 fw-bold mb-4">About <span class="gradient-text">Me</span></h2>
+                    <p class="text-slate-400 mb-4 leading-relaxed">
+                        I am a dedicated professional with a background in Information Technology and Management. My expertise spans from managing complex payroll operations at Neeyamo to overseeing large-scale IT infrastructures at Arul Anandar College. I specialize in troubleshooting, network security, and data accuracy.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <h4 class="h2 fw-bold text-primary mb-0"><span class="counter">3</span>+</h4>
+                            <p class="text-slate-500">Years Experience</p>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="h2 fw-bold text-primary mb-0"><span class="counter">50</span>+</h4>
+                            <p class="text-slate-500">Systems Managed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                <div class="row g-4">
+                    <div class="col-sm-6">
+                        <div class="glass-card p-4 text-center">
+                            <i class="fas fa-server text-4xl mb-3 text-primary"></i>
+                            <h5>IT Admin</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="glass-card p-4 text-center">
+                            <i class="fas fa-calculator text-4xl mb-3 text-primary"></i>
+                            <h5>Payroll Expert</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="glass-card p-4 text-center">
+                            <i class="fas fa-shield-alt text-4xl mb-3 text-primary"></i>
+                            <h5>Network Sec</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="glass-card p-4 text-center">
+                            <i class="fas fa-database text-4xl mb-3 text-primary"></i>
+                            <h5>Data Validation</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="display-5 fw-bold mb-3">Professional <span class="gradient-text">Journey</span></h2>
+            <div class="w-16 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto mt-5">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="glass-card p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div>
+                            <h3 class="h4 fw-bold text-primary">Product Specialist</h3>
+                            <h5 class="text-white">Neeyamo Enterprise Solutions Pvt. Ltd</h5>
+                            <p class="text-slate-500 mb-0"><i class="fas fa-map-marker-alt me-2"></i>Madurai, India</p>
+                        </div>
+                        <span class="badge bg-primary rounded-pill px-3 py-2">07/2025 - Present</span>
+                    </div>
+                    <ul class="text-slate-400 space-y-2">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Handled payroll software and complex Excel operations for global clients.</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Processed client inputs to prepare accurate pay registers and payroll documents.</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Validated post-payroll reports ensuring 100% compliance with company policies.</li>
+                    </ul>
+                    <div class="mt-3">
+                        <span class="skill-badge">Payroll Compliance</span>
+                        <span class="skill-badge">Excel Automation</span>
+                        <span class="skill-badge">Logic Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="glass-card p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div>
+                            <h3 class="h4 fw-bold text-primary">Warehouse Storekeeper</h3>
+                            <h5 class="text-white">Par Zon Maintenance Pvt. Ltd</h5>
+                            <p class="text-slate-500 mb-0"><i class="fas fa-map-marker-alt me-2"></i>Singapore</p>
+                        </div>
+                        <span class="badge bg-slate-700 rounded-pill px-3 py-2">09/2024 - 04/2025</span>
+                    </div>
+                    <ul class="text-slate-400 space-y-2">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Managed staff attendance, scheduling, and daily workforce operations.</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Oversaw logistics coordination ensuring timely deliveries and smooth order processing.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="glass-card p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div>
+                            <h3 class="h4 fw-bold text-primary">Junior IT Admin</h3>
+                            <h5 class="text-white">Arul Anandar College</h5>
+                            <p class="text-slate-500 mb-0"><i class="fas fa-map-marker-alt me-2"></i>Madurai, India</p>
+                        </div>
+                        <span class="badge bg-slate-700 rounded-pill px-3 py-2">06/2023 - 09/2024</span>
+                    </div>
+                    <ul class="text-slate-400 space-y-2">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Optimized network reliability using enterprise routers and switches.</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Administered domain users within ERP portals and Google Workspace.</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i>Managed firewall rules, IP allocation, and periodic configuration backups.</li>
+                    </ul>
+                    <div class="mt-3">
+                        <span class="skill-badge">Network Admin</span>
+                        <span class="skill-badge">Firewall</span>
+                        <span class="skill-badge">CCTV Backup</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-black bg-opacity-30">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Technical <span class="gradient-text">Proficiency</span></h2>
+            </div>
+            
+            <div class="row g-5 mt-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h4 class="mb-4 text-white"><i class="fas fa-desktop me-2 text-primary"></i>Operating Systems</h4>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span>Windows Server</span><span>90%</span></div>
+                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%"></div></div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span>Ubuntu / Linux</span><span>75%</span></div>
+                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 75%"></div></div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span>Windows 7/10/11</span><span>95%</span></div>
+                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 95%"></div></div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6" data-aos="fade-left">
+                    <h4 class="mb-4 text-white"><i class="fas fa-network-wired me-2 text-primary"></i>Network & Infrastructure</h4>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span>TCP/IP & Networking</span><span>85%</span></div>
+                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span>Firewall Management</span><span>80%</span></div>
+                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%"></div></div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2"><span>PC Troubleshooting & NAS</span><span>90%</span></div>
+                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="container">
+        <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-up">
+                <h2 class="h3 fw-bold mb-4 gradient-text">Education</h2>
+                <div class="glass-card p-4 h-100">
+                    <h4 class="text-white h5 fw-bold">B.Sc | Information Technology and Management</h4>
+                    <p class="text-primary mb-1">Arul Anandar College, Madurai</p>
+                    <p class="text-slate-500">Graduated: 2023</p>
+                    <div class="mt-3">
+                        <span class="badge bg-success rounded-pill px-3">First Class with Distinction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="h3 fw-bold mb-4 gradient-text">Certifications</h2>
+                <div class="glass-card p-4 h-100 d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-white p-3 rounded-lg me-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="40" alt="Google">
+                        </div>
+                        <div>
+                            <h4 class="text-white h5 fw-bold">IT Support Fundamentals</h4>
+                            <p class="text-slate-400 mb-0">Issued by Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="glass-card p-5 overflow-hidden position-relative">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">Let's <span class="gradient-text">Connect</span></h2>
+                    <p class="text-slate-400 mb-5">Ready to bring my technical expertise to your team. Let's discuss how I can contribute to your project.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-500 mb-0">Email Me</p>
+                                <a href="mailto:aruljernas002@gmail.com" class="text-white fw-bold">aruljernas002@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                <i class="fas fa-phone text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-500 mb-0">Call Me</p>
+                                <a href="tel:+917339413233" class="text-white fw-bold">+91 73394 13233</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-500 mb-0">Location</p>
+                                <p class="text-white fw-bold mb-0">Tamilnadu, India - 630 411</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-transparent border-slate-700 text-white p-3" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control bg-transparent border-slate-700 text-white p-3" placeholder="Your Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control bg-transparent border-slate-700 text-white p-3" placeholder="Subject">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control bg-transparent border-slate-700 text-white p-3" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="button" class="btn btn-premium w-100">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center text-slate-500 border-t border-slate-800">
+        <div class="container">
+            <div class="mb-4">
+                <a href="#" class="text-white mx-3 h4"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white mx-3 h4"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-white mx-3 h4"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2026 Arul Jernas X. All rights reserved.</p>
+            <a href="#home" class="btn btn-sm btn-outline-secondary rounded-circle mt-3">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // AOS Animation
+        AOS.init({ duration: 1000, once: true });
+
+        // Typed.js Effect
+        new Typed('#typed', {
+            strings: ['Product Specialist', 'IT Administrator', 'Network Specialist', 'Logic Analyst'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+
+        // Particles Background
+        particlesJS('particles-js', {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#00d2ff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.2, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#00d2ff", "opacity": 0.1, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true },
+                "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 0.4 } } }
+            },
+            "retina_detect": true
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(15, 23, 42, 0.9)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.03)';
+            }
+        });
+    </script>
+</body>
+</html>
